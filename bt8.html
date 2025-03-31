@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px 100px;
+    gap: 10px;
+    width: 100%;
+    height: 10vh;
+}
+
+
+.header {padding: 20px;
+    grid-column: 1/ 4;
+    background: gray;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+.hero{padding: 20px;
+    grid-column: 1/ 4;
+    background: rgb(0, 96, 96);
+    font-size: 24px;
+    font-weight: bold;
+    color: white;}
+
+.sidebar {
+    background: rgb(216, 140, 0);
+    padding: 20px;
+    color: white;
+}
+
+.content {
+    background: rgb(216, 140, 0);
+    padding: 20px;
+    color: white;
+}
+
+.aside {
+    background: rgb(216, 140, 0);
+    padding: 20px;
+    color: white;
+}
+
+
+.footer {padding: 20px;
+    grid-column: 1 / 4;
+    background: grey;
+    font-size: 18px;
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <header class="header">Header</header>
+        <div class="hero">Hero</div>
+            <aside class="sidebar">Dịch vụ 1</aside>
+            <main class="content">Dịch vụ 2</main>
+            <aside class="aside">Dịch vụ 3</aside>
+        <footer class="footer">Footer</footer>
+    </div>
+</body>
+</html>
